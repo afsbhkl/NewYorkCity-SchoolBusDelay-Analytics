@@ -3,13 +3,13 @@
 
 ## Project Introduction / 项目简介
 
-This project investigates the persistent issue of school bus delays in New York City using a data-driven analytics approach. Leveraging over 740,000 official records from NYC Open Data (2015–2025), the team conducted systematic data cleaning, descriptive statistics, and advanced modelling (CART, Random Forest, Bootstrap, and regression analysis). The results identified key delay drivers—bus operators and routes—and generated actionable recommendations for improving operational reliability and ensuring fair access to education for all students.
+This project investigates the persistent issue of school bus delays in New York City using a data-driven analytics approach. Leveraging over 740,000 official records from NYC Open Data (2015–2025), the team conducted systematic data cleaning, descriptive statistics, and advanced modelling (CART, Random Forest, Bootstrap, and regression analysis). The results identified key delay drivers—bus operators and routes—and generated actionable recommendations for improving operational reliability and ensuring fair access to education for all students.<br>
 本项目通过数据分析方法研究纽约市长期存在的校车延误问题。基于纽约市开放数据平台2015–2025年的74万条官方记录，项目团队进行了系统的数据清洗、描述性统计及高级建模（包括CART决策树、随机森林、Bootstrap与回归分析）。结果发现校车延误的主要驱动因素为运营商与线路特征，并据此提出针对性的改进建议，以提升运营可靠性并保障所有学生的公平受教育机会。
 
 ## Business Situation and Problem Setting / 业务背景与问题定义
 
-New York City’s school bus system serves over 150,000 children, including 66,000 with disabilities or in temporary housing. However, in 2023/24 alone, over 80,000 delays were recorded with a 20% rise in complaints. This reliability crisis affects underprivileged students most severely, causing missed classes and deepening educational inequality.
-The business problem was thus defined as:“What are the main drivers of school bus delays in NYC, and how can the city improve network reliability?”
+New York City’s school bus system serves over 150,000 children, including 66,000 with disabilities or in temporary housing. However, in 2023/24 alone, over 80,000 delays were recorded with a 20% rise in complaints. This reliability crisis affects underprivileged students most severely, causing missed classes and deepening educational inequality.<br>
+The business problem was thus defined as:“What are the main drivers of school bus delays in NYC, and how can the city improve network reliability?”<br>
 纽约市共有超过15万名学生依赖校车通勤，其中6.6万名是残障或临时住房儿童。2023/24学年校车延误超过8万次，投诉量上升20%，严重影响弱势群体的上学机会。因此，核心问题定义为：“纽约市校车延误的主要原因是什么？城市应如何提升运输网络的可靠性？”
 
 ## Data Source / 数据来源
@@ -18,14 +18,14 @@ NYC Open Data – Bus Breakdown and Delays (2015–2025) https://data.cityofnew
 
 ## Data Cleaning / 数据清洗
 
-The original dataset “Bus Breakdown and Delays” from NYC Open Data (2015–2025) contained 748,482 records and 21 columns, but was plagued by duplicates, missing entries, and inconsistent time formats.
+The original dataset “Bus Breakdown and Delays” from NYC Open Data (2015–2025) contained 748,482 records and 21 columns, but was plagued by duplicates, missing entries, and inconsistent time formats.<br>
 After extensive cleaning, 582,073 valid records and 16 key variables remained.
 
-Key cleaning steps included:
-Removing irrelevant or duplicate columns (e.g., Incident_Number, Created_On).
-Eliminating records with missing or unrealistic data (e.g., over 1,000 students on a bus).
-Standardizing delay times to unified minutes (e.g., “1h30m” → 90 min, “10–15m” → 12.5).
-Unifying inconsistent company names through prefix-matching and uppercase mapping.
+Key cleaning steps included:<br>
+Removing irrelevant or duplicate columns (e.g., Incident_Number, Created_On).<br>
+Eliminating records with missing or unrealistic data (e.g., over 1,000 students on a bus).<br>
+Standardizing delay times to unified minutes (e.g., “1h30m” → 90 min, “10–15m” → 12.5).<br>
+Unifying inconsistent company names through prefix-matching and uppercase mapping.<br>
 
 These cleaning procedures enabled accurate modeling and highlighted severe issues in NYC’s data-entry system, which relied on manual inputs.
 
@@ -33,10 +33,10 @@ Recommendations: Implement input format restrictions (numeric-only for durations
 
 原始数据集来源于纽约市开放数据平台（2015–2025），共包含 748,482 条记录、21 个变量。由于重复、缺失值和格式不一致，数据质量较差。经过系统清洗后，保留 582,073 条有效记录、16 个核心变量。
 
-主要清洗工作包括：
-删除无关或重复列（如 Incident_Number、Created_On）。/n
-去除含有缺失值或不合理数据的记录（如学生人数>1000）。
-将延误时间统一转换为分钟单位（如 “1h30m”→90、“10–15m”→12.5）。
+主要清洗工作包括：<br>
+删除无关或重复列（如 Incident_Number、Created_On）。<br>
+去除含有缺失值或不合理数据的记录（如学生人数>1000）。<br>
+将延误时间统一转换为分钟单位（如 “1h30m”→90、“10–15m”→12.5）。<br>
 统一公司名称格式，通过前缀映射和大写标准化。
 
 这些步骤保证了模型分析的准确性，并暴露出纽约市数据录入系统的严重手工输入问题。建议政府在系统中加入格式限制与下拉菜单选择，防止录入错误，从而改善数据系统以提高一致性和效率。
@@ -45,10 +45,10 @@ Recommendations: Implement input format restrictions (numeric-only for durations
 
 1.Delay Duration Statistics / 延误时间分布特征
 
-After cleaning, delay durations were found to range between 8 and 76 minutes, with:
-Mean: 38.7 min
-Median: 38 min
-1st Quartile (Q1): 23 min
+After cleaning, delay durations were found to range between 8 and 76 minutes, with:<br>
+Mean: 38.7 min<br>
+Median: 38 min<br>
+1st Quartile (Q1): 23 min<br>
 3rd Quartile (Q3): 53 min
 
 Since school buses typically arrive 20–25 minutes before classes, 75% of delays cause students to miss class time. This pattern indicates that school bus delays have a direct educational impact, particularly for low-income or disabled students who depend on these services.
