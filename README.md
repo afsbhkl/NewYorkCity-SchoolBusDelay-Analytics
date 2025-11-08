@@ -34,7 +34,7 @@ Recommendations: Implement input format restrictions (numeric-only for durations
 原始数据集来源于纽约市开放数据平台（2015–2025），共包含 748,482 条记录、21 个变量。由于重复、缺失值和格式不一致，数据质量较差。经过系统清洗后，保留 582,073 条有效记录、16 个核心变量。
 
 主要清洗工作包括：
-删除无关或重复列（如 Incident_Number、Created_On）。
+删除无关或重复列（如 Incident_Number、Created_On）。/n
 去除含有缺失值或不合理数据的记录（如学生人数>1000）。
 将延误时间统一转换为分钟单位（如 “1h30m”→90、“10–15m”→12.5）。
 统一公司名称格式，通过前缀映射和大写标准化。
