@@ -150,16 +150,15 @@ Several route numbers (e.g., M136, Q863, K132, N534) consistently showed long de
 部分线路（如 M136、Q863、K132、N534 等）表现出持续高延误。建议城市交通部门重新规划路线以避开拥堵区域，或调整时刻表增加缓冲时间。
 
 ## Key Insights & Recommendations / 核心结论与建议<br>
-1. Focus Factors: Bus operator and route number are the only significant delay drivers.<br>
-2. Operator Strategy: Replace three low-performing companies; cooperate with three to fix internal issues.<br>
-3. Routing Strategy: Re-route high-delay routes and revise schedules.<br>
-4. Data Quality: Introduce system-based validation to prevent inconsistent input.<br>
-5. Equity Impact: Reducing delays directly supports educational equality.
+Focus Factors: Bus operator and route number are the only significant delay drivers.<br>
+Operator Strategy: Replace three low-performing companies; cooperate with three to fix internal issues.<br>
+Routing Strategy: Re-route high-delay routes and revise schedules.<br>
+Data Quality: Introduce system-based validation to prevent inconsistent input.<br>
+Equity Impact: Reducing delays directly supports educational equality.
 
-
-1. 关键影响因素：校车运营商与线路编号是唯一显著延误因素。<br>
-2. 运营策略：终止3家低绩效公司合同，与其余3家合作改进。<br>
-3. 路线策略：优化拥堵线路，调整校车时刻表。<br>
-4. 数据质量：在数据系统中增加输入限制，防止格式错误。<br>
-5. 公平性影响：减少延误有助于弱势学生的教育公平。
+关键影响因素：校车运营商与线路编号是唯一显著延误因素。<br>
+运营策略：终止3家低绩效公司合同，与其余3家合作改进。<br>
+路线策略：优化拥堵线路，调整校车时刻表。<br>
+数据质量：在数据系统中增加输入限制，防止格式错误。<br>
+公平性影响：减少延误有助于弱势学生的教育公平。
 
