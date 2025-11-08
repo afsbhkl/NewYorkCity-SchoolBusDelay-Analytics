@@ -165,38 +165,32 @@ Equity Impact: Reducing delays directly supports educational equality.
 
 ## Code Execution Guide / 代码运行指南<br>
 
-1. Recommended Environment: RStudio
-
+1.Recommended Environment: RStudio
 Open the project NewYork_SchoolBusDelay in RStudio.<br>
 Run the scripts in the following order:<br>
 data_clean.R<br>
 descriptive_analysis.R<br> 
 model.R<br>
 
-2.
-The raw data is stored in bus_original.csv, which can be downloaded from the NYC Open Data website.<br>
+2.The raw data is stored in bus_original.csv, which can be downloaded from the NYC Open Data website.<br>
 The script data_clean.R will generate bus_clean_result.csv, but this is not the final dataset.<br>
 The final dataset used for descriptive analysis and modeling is bus_clean.csv, which is based on bus_clean_result.csv with several manual corrections.<br>
 
-3. 
-For Mac users, the code can be run directly after opening the project.<br>
+3.For Mac users, the code can be run directly after opening the project.<br>
 For Windows users, please modify the file paths — especially replacing “/” with “\”.
 
 
-1. 使用 RStudio 打开项目 NewYork_SchoolBusDelay。
-
+1.使用 RStudio 打开项目 NewYork_SchoolBusDelay。
 按以下顺序运行脚本：<br>
 data_clean.R<br>
 descriptive_analysis.R<br>
 model.R
 
-2.
-原始数据文件为 bus_original.csv，可从纽约市开放数据平台下载。<br>
+2.原始数据文件为 bus_original.csv，可从纽约市开放数据平台下载。<br>
 脚本 data_clean.R 会生成 bus_clean_result.csv，但这并非最终数据。<br>
 我们在描述性分析与建模中使用的是 bus_clean.csv，它是在 bus_clean_result.csv 基础上经过少量人工校正的版本。<br>
 
-4.
-Mac 用户 打开项目后可直接运行。<br>
+3.Mac 用户 打开项目后可直接运行。<br>
 Windows 用户 需修改文件路径，特别是将路径符号从 “/” 改为 “\”。
 
 
